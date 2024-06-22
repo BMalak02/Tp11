@@ -1,0 +1,25 @@
+<h1 style="text-align:center;">Welcome to my project</h1>
+
+<p><b>Name:</b> {{name}}</p>
+<p><b>From:</b> {{location}}</p>
+<p><b>Status:</b> {{getStatus()}}</p>
+
+<button type="button" class="btn btn-danger" (click)="getMessage()">Save</button>
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="text-center">Two way binding</h4>
+      </div>
+      <div class="card-body">
+        <input type="text" class="form-control" [(ngModel)]= "Message">
+        <b class="text-danger">{{Message}}</b>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <button type="button" class="btn btn-link" (click)="goToRegister()">go to register</button>
+</div>
